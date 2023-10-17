@@ -2,7 +2,9 @@
 package com.draekk.consultorioodontologico.logica;
 
 import java.util.Date;
+import javax.persistence.Entity;
 
+@Entity
 public class Responsable extends Persona {
 	
 	private String tipoResponsabilidad;

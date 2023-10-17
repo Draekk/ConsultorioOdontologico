@@ -2,10 +2,18 @@
 package com.draekk.consultorioodontologico.logica;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.OneToOne;
 
+@Entity
 public class Secretario extends Persona{
 	
+	@Enumerated(EnumType.STRING)
 	private Sector sector;
+	
+	@OneToOne
 	private Usuario usuario;
 
 	public Sector getSector() {

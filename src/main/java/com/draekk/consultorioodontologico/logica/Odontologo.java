@@ -3,12 +3,25 @@ package com.draekk.consultorioodontologico.logica;
 
 import java.util.Date;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
+@Entity
 public class Odontologo extends Persona {
 	
+	@Enumerated(EnumType.STRING)
 	private Especialidad especialidad;
+	
+	@OneToMany(mappedBy = "odontologo")
 	private List<Turno> turnos;
+	
+	@OneToOne
 	private Usuario usuario;
+	
+	@OneToOne
 	private Horario horario;
 
 	

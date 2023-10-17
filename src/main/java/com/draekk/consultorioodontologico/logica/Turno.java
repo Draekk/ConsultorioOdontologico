@@ -2,13 +2,27 @@
 package com.draekk.consultorioodontologico.logica;
 
 import java.util.Date;
+import javax.persistence.*;
 
+@Entity
 public class Turno {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Temporal(TemporalType.DATE)
 	private Date fecha;
 	private String hora;
 	private String affeccion;
+	
+	@ManyToOne
+	@JoinColumn(name = "id")
+	private Odontologo odontologo;
+	
+	@ManyToOne
+	@JoinColumn(name = "id")
+	private Paciente paciente;
 
 	public int getId() {
 		return id;
@@ -42,15 +56,32 @@ public class Turno {
 		this.affeccion = affeccion;
 	}
 
+	public Odontologo getOdontologo() {
+		return odontologo;
+	}
+
+	public void setOdontologo(Odontologo odontologo) {
+		this.odontologo = odontologo;
+	}
+
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
+	
+
 	public Turno() {
 	}
 
-	public Turno(int id, Date fecha, String hora, String affeccion) {
+	public Turno(int id, Date fecha, String hora, String affeccion, Odontologo odontologo, Paciente paciente) {
 		this.id = id;
 		this.fecha = fecha;
 		this.hora = hora;
 		this.affeccion = affeccion;
+		this.odontologo = odontologo;
+		this.paciente = paciente;
 	}
-	
-	
 }

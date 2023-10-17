@@ -1,8 +1,13 @@
 
 package com.draekk.consultorioodontologico.logica;
 
+import javax.persistence.*;
+
+@Entity
 public class Horario {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String inicio;
 	private String fin;

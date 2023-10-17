@@ -2,15 +2,22 @@
 package com.draekk.consultorioodontologico.logica;
 
 import java.util.Date;
+import javax.persistence.*;
 
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Persona {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String rut;
 	private String nombre;
 	private String apellido;
 	private String telefono;
 	private String direccion;
+	
+	@Temporal(TemporalType.DATE)
 	private Date fecha_nac;
 
 	public int getId() {

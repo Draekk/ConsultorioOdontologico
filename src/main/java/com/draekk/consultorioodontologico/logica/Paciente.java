@@ -3,12 +3,24 @@ package com.draekk.consultorioodontologico.logica;
 
 import java.util.Date;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
+@Entity
 public class Paciente extends Persona {
 	
 	private boolean tiene_OS;
+	
+	@Enumerated(EnumType.STRING)
 	private TipoSangre tipoSangre;
+	
+	@OneToOne
 	private Responsable responsable;
+	
+	@OneToMany(mappedBy = "paciente")
 	private List<Turno> turnos;
 
 
