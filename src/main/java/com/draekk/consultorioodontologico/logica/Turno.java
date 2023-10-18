@@ -1,11 +1,12 @@
 
 package com.draekk.consultorioodontologico.logica;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-public class Turno {
+public class Turno implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

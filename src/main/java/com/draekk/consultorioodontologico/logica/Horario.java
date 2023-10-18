@@ -1,10 +1,11 @@
 
 package com.draekk.consultorioodontologico.logica;
 
+import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-public class Horario {
+public class Horario implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
