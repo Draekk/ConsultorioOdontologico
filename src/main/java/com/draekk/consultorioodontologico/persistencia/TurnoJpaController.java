@@ -16,6 +16,7 @@ import com.draekk.consultorioodontologico.persistencia.exceptions.NonexistentEnt
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 /**
  *
@@ -26,6 +27,11 @@ public class TurnoJpaController implements Serializable {
 	public TurnoJpaController(EntityManagerFactory emf) {
 		this.emf = emf;
 	}
+	
+	public TurnoJpaController(){
+		emf = Persistence.createEntityManagerFactory("ClinicaOdontologicaPU");
+	}
+	
 	private EntityManagerFactory emf = null;
 
 	public EntityManager getEntityManager() {
