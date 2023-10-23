@@ -1,4 +1,5 @@
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\JakartaRestConfiguration.java
+C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\Controladora.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\Horario.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\Paciente.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\SecretarioJpaController.java
@@ -6,6 +7,7 @@ C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontolog
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\exceptions\IllegalOrphanException.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\PersonaJpaController.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\TipoSangre.java
+C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\Repositorio.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\exceptions\PreexistingEntityException.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\OdontologoJpaController.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\TurnoJpaController.java
@@ -19,6 +21,7 @@ C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontolog
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\ResponsableJpaController.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\PacienteJpaController.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\Secretario.java
+C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\ControladoraPersistencia.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\Rol.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\logica\Sector.java
 C:\Users\Drakkseid\Documents\Programacion\Proyectos-Pruebas\ConsultorioOdontologico\src\main\java\com\draekk\consultorioodontologico\persistencia\exceptions\NonexistentEntityException.java
