@@ -23,7 +23,7 @@
                 </div>
 
                 <!-- Menu desplegable -->
-                <ul id="menu-odontologo" class="inactive">
+                <ul id="menu-odontologo" class="inactive dropdown-menu">
                     <li class="container"><a href="index-reg-odon.jsp">Registrar Odontólogo</a></li>
                     <li class="container"><a href="#">Ver Odontólogos</a></li>
                 </ul>
@@ -40,9 +40,26 @@
                 </div>
 
                 <!-- Menu desplegable -->
-                <ul id="menu-paciente" class="inactive">
+                <ul id="menu-paciente" class="inactive dropdown-menu">
                     <li class="container"><a href="index-reg-pac.jsp">Registrar Paciente</a></li>
                     <li class="container"><a href="#">Ver Pacientes</a></li>
+                </ul>
+                <!-- Fin Menu desplegable-->
+
+            </li>
+            <li class="container vert">
+                <div id="usuario" class="container">
+                    <div class="container">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Usuarios</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <!-- Menu desplegable -->
+                <ul id="menu-usuario" class="inactive dropdown-menu">
+                    <li class="container"><a href="index-reg-usuario.jsp">Registrar Usuario</a></li>
+                    <li class="container"><a href="#">Ver Usuarios</a></li>
                 </ul>
                 <!-- Fin Menu desplegable-->
 

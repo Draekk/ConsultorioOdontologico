@@ -14,7 +14,6 @@
             <div class="container vert header-main">
                 <%@include file="./components/index-header.jsp" %>
                 <main>
-
                 </main>
                 <%@include file="./components/index-footer.jsp" %>
             </div>

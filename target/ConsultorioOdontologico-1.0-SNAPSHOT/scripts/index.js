@@ -1,21 +1,27 @@
 const menuOdontologo = document.getElementById('menu-odontologo');
 const menuPaciente = document.getElementById('menu-paciente');
+const menuUsuario = document.getElementById('menu-usuario');
 const odontologo = document.getElementById('odontologo');
 const paciente = document.getElementById('paciente');
+const usuario = document.getElementById('usuario');
 
-function toogleIncativeClass(element) {
-  if (!element.classList.contains('inactive')) {
-    element.classList.add('inactive');
-  } else {
-    element.classList.remove('inactive');
-  }
+function toogleInactiveClass(element) {
+    if (!element.classList.contains('inactive')) {
+        element.classList.add('inactive');
+    } else {
+        element.classList.remove('inactive');
+    }
 }
 
 odontologo.addEventListener('click', () => {
-  toogleIncativeClass(menuOdontologo);
+    toogleInactiveClass(menuOdontologo);
 });
 
 paciente.addEventListener('click', () => {
-  toogleIncativeClass(menuPaciente);
+    toogleInactiveClass(menuPaciente);
+});
+
+usuario.addEventListener('click', () => {
+    toogleInactiveClass(menuUsuario);
 });
 

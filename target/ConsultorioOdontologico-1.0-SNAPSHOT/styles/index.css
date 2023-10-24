@@ -4,9 +4,11 @@
   --border-color-blue: #0077b6;
   --icon-alpha-color: rgba(255, 255, 255, 0.6);
   --lightness: rgba(255, 255, 255, 0.35);
+  --dark-shadow: rgba(0,0,0,0.5);
   --light-shadow: rgba(0, 0, 0, 0.03);
   --light-shadow-s: rgba(0, 0, 0, 0.06);
   --aside-line: solid 0.15rem;
+  --aside-line-s: solid 0.05rem;
 }
 
 /*General*/
@@ -40,6 +42,12 @@ a:visited {
 
 .inactive {
   display: none;
+}
+
+.sg-bb {
+    border-bottom: var(--aside-line-s) var(--dark-shadow);
+    width: 80%;
+    margin: 0.5rem 0 1.5rem 0;
 }
 
 /*Flexbox*/
@@ -158,8 +166,7 @@ aside h5 {
 
 /*            Sub menu            */
 
-#menu-odontologo,
-#menu-paciente {
+.dropdown-menu{
   background-color: var(--aside-fonts-color);
   border-radius: 0.5rem;
   padding: 1rem 2rem;
@@ -167,14 +174,12 @@ aside h5 {
   margin-bottom: 1rem;
 }
 
-#menu-odontologo li,
-#menu-paciente li {
+.dropdown-menu li{
   height: 5rem;
   align-items: center;
 }
 
-#menu-odontologo a,
-#menu-paciente a {
+.dropdown-menu a{
   font-size: 1.2rem;
   color: black;
   display: block;
@@ -183,9 +188,8 @@ aside h5 {
   border-radius: 1rem;
 }
 
-#menu-odontologo a:hover,
-#menu-paciente a:hover {
-  background-color: var(--shadow-s);
+.dropdown-menu a:hover{
+  background-color: var(--light-shadow-s);
 }
 
 
@@ -281,16 +285,30 @@ main>div h1 {
   margin: 2rem 0;
 }
 
-main>div form, main>div label {
+main>div form {
     background: none;
+    width: 50rem;
 }
 
-main>div input {
-  width: 40rem;
+form>div {
+    width: 100%;
+}
+
+form>div>label>input {
+    width: 100%;
+}
+
+form label {
+    width: 100%;
+    padding: 0 0.2rem;
+}
+
+input, select {
+  width: 100%;
   height: 4rem;
   margin: 0.5rem 0;
   font-size: 2rem;
-  padding-left: 1rem;
+  padding: 0 1rem;
   border: solid 0.1rem;
   border-radius: 2rem;
 }
@@ -298,9 +316,10 @@ main>div input {
 #btn-submit {
   width: 15rem;
   cursor: pointer;
+  background-color: var(--border-color-blue);
+  color: var(--aside-fonts-color);
+  border: solid 0.1rem black;
 }
-
-
 
 
 /*Footer*/
