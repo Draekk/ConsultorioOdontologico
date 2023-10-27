@@ -4,17 +4,16 @@ package com.draekk.consultorioodontologico.logica;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import javax.persistence.Basic;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
 public class Odontologo extends Persona implements Serializable {
 	
-	@Enumerated(EnumType.STRING)
-	private Especialidad especialidad;
+	@Basic
+	private String especialidad;
 	
 	@OneToMany(mappedBy = "odontologo")
 	private List<Turno> turnos;
@@ -26,11 +25,11 @@ public class Odontologo extends Persona implements Serializable {
 	private Horario horario;
 
 	
-	public Especialidad getEspecialidad() {
+	public String getEspecialidad() {
 		return especialidad;
 	}
 
-	public void setEspecialidad(Especialidad especialidad) {
+	public void setEspecialidad(String especialidad) {
 		this.especialidad = especialidad;
 	}
 
@@ -61,7 +60,7 @@ public class Odontologo extends Persona implements Serializable {
 	public Odontologo() {
 	}
 
-	public Odontologo(Especialidad especialidad, List<Turno> turnos, Usuario usuario, Horario horario, int id, String rut, String nombre, String apellido, String telefono, String direccion, Date fecha_nac) {
+	public Odontologo(String especialidad, List<Turno> turnos, Usuario usuario, Horario horario, int id, String rut, String nombre, String apellido, String telefono, String direccion, Date fecha_nac) {
 		super(id, rut, nombre, apellido, telefono, direccion, fecha_nac);
 		this.especialidad = especialidad;
 		this.turnos = turnos;

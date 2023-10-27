@@ -12,9 +12,7 @@ public class Usuario implements Serializable {
 	private int id;
 	private String username;
 	private String password;
-	
-	@Enumerated(EnumType.STRING)
-	private Rol rol;
+	private String rol;
 
 	public int getId() {
 		return id;
@@ -40,23 +38,28 @@ public class Usuario implements Serializable {
 		this.password = password;
 	}
 
-	public Rol getRol() {
+	public String getRol() {
 		return rol;
 	}
 
-	public void setRol(Rol rol) {
+	public void setRol(String rol) {
 		this.rol = rol;
 	}
 
 	public Usuario() {
 	}
 
-	public Usuario(int id, String username, String password, Rol rol) {
-		this.id = id;
+	public Usuario(String username, String password, String rol) {
 		this.username = username;
 		this.password = password;
 		this.rol = rol;
 	}
 	
+	public Usuario(int id, String username, String password, String rol) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.rol = rol;
+	}
 	
 }

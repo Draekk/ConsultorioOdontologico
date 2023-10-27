@@ -5,8 +5,6 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -15,8 +13,7 @@ public class Paciente extends Persona implements Serializable {
 	
 	private boolean tiene_OS;
 	
-	@Enumerated(EnumType.STRING)
-	private TipoSangre tipoSangre;
+	private String tipoSangre;
 	
 	@OneToOne
 	private Responsable responsable;
@@ -33,11 +30,11 @@ public class Paciente extends Persona implements Serializable {
 		this.tiene_OS = tiene_OS;
 	}
 
-	public TipoSangre getTipoSangre() {
+	public String getTipoSangre() {
 		return tipoSangre;
 	}
 
-	public void setTipoSangre(TipoSangre tipoSangre) {
+	public void setTipoSangre(String tipoSangre) {
 		this.tipoSangre = tipoSangre;
 	}
 
@@ -62,7 +59,7 @@ public class Paciente extends Persona implements Serializable {
 	public Paciente() {
 	}
 
-	public Paciente(boolean tiene_OS, TipoSangre tipoSangre, Responsable responsable, List<Turno> turnos, int id, String rut, String nombre, String apellido, String telefono, String direccion, Date fecha_nac) {
+	public Paciente(boolean tiene_OS, String tipoSangre, Responsable responsable, List<Turno> turnos, int id, String rut, String nombre, String apellido, String telefono, String direccion, Date fecha_nac) {
 		super(id, rut, nombre, apellido, telefono, direccion, fecha_nac);
 		this.tiene_OS = tiene_OS;
 		this.tipoSangre = tipoSangre;

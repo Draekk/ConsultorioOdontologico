@@ -3,24 +3,21 @@ package com.draekk.consultorioodontologico.logica;
 
 import java.util.Date;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.OneToOne;
 
 @Entity
 public class Secretario extends Persona{
 	
-	@Enumerated(EnumType.STRING)
-	private Sector sector;
+	private String sector;
 	
 	@OneToOne
 	private Usuario usuario;
 
-	public Sector getSector() {
+	public String getSector() {
 		return sector;
 	}
 
-	public void setSector(Sector sector) {
+	public void setSector(String sector) {
 		this.sector = sector;
 	}
 
@@ -35,7 +32,7 @@ public class Secretario extends Persona{
 	public Secretario() {
 	}
 
-	public Secretario(Sector sector, Usuario usuario, int id, String rut, String nombre, String apellido, String telefono, String direccion, Date fecha_nac) {
+	public Secretario(String sector, Usuario usuario, int id, String rut, String nombre, String apellido, String telefono, String direccion, Date fecha_nac) {
 		super(id, rut, nombre, apellido, telefono, direccion, fecha_nac);
 		this.sector = sector;
 		this.usuario = usuario;

@@ -27,7 +27,7 @@ public class HorarioJpaController implements Serializable {
 	}
 	
 	public HorarioJpaController(){
-		emf = Persistence.createEntityManagerFactory("ClinicaOdontologicaPU");
+		emf = Persistence.createEntityManagerFactory("ConsultorioOdontologicoPU");
 	}
 	
 	private EntityManagerFactory emf = null;

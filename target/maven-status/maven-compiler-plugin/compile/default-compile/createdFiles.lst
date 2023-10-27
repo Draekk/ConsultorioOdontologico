@@ -2,13 +2,11 @@ com\draekk\consultorioodontologico\logica\Usuario.class
 com\draekk\consultorioodontologico\JakartaRestConfiguration.class
 com\draekk\consultorioodontologico\logica\Horario_.class
 com\draekk\consultorioodontologico\logica\Secretario_.class
-com\draekk\consultorioodontologico\logica\Especialidad.class
 com\draekk\consultorioodontologico\logica\Paciente.class
 com\draekk\consultorioodontologico\logica\Usuario_.class
 com\draekk\consultorioodontologico\persistencia\OdontologoJpaController.class
 com\draekk\consultorioodontologico\logica\Responsable.class
 com\draekk\consultorioodontologico\logica\Odontologo.class
-com\draekk\consultorioodontologico\logica\Sector.class
 com\draekk\consultorioodontologico\logica\Responsable_.class
 com\draekk\consultorioodontologico\logica\Turno.class
 com\draekk\consultorioodontologico\logica\Paciente_.class
@@ -26,11 +24,9 @@ com\draekk\consultorioodontologico\persistencia\ResponsableJpaController.class
 com\draekk\consultorioodontologico\persistencia\exceptions\NonexistentEntityException.class
 com\draekk\consultorioodontologico\logica\Controladora.class
 com\draekk\consultorioodontologico\persistencia\ControladoraPersistencia.class
-com\draekk\consultorioodontologico\logica\Rol.class
+com\draekk\consultorioodontologico\servlets\SvUsuarios.class
 com\draekk\consultorioodontologico\logica\Horario.class
 com\draekk\consultorioodontologico\persistencia\HorarioJpaController.class
 com\draekk\consultorioodontologico\resources\JakartaEE8Resource.class
-com\draekk\consultorioodontologico\logica\TipoSangre.class
-com\draekk\consultorioodontologico\logica\Repositorio.class
 com\draekk\consultorioodontologico\logica\Odontologo_.class
 com\draekk\consultorioodontologico\persistencia\UsuarioJpaController.class

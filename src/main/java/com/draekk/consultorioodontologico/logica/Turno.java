@@ -18,11 +18,11 @@ public class Turno implements Serializable {
 	private String affeccion;
 	
 	@ManyToOne
-	@JoinColumn(name = "id")
+	@JoinColumn(name = "odontologo_id")
 	private Odontologo odontologo;
 	
 	@ManyToOne
-	@JoinColumn(name = "id")
+	@JoinColumn(name = "paciente_id")
 	private Paciente paciente;
 
 	public int getId() {

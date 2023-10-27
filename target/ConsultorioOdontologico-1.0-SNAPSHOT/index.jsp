@@ -14,6 +14,9 @@
             <div class="container vert header-main">
                 <%@include file="./components/index-header.jsp" %>
                 <main>
+                    <% if (request.getParameter("username") != null) {%>
+                    <h3>Username: <%=request.getParameter("username")%></h3>
+                    <% }%>
                 </main>
                 <%@include file="./components/index-footer.jsp" %>
             </div>
