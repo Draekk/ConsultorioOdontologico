@@ -1,0 +1,62 @@
+:root {
+  --aside-color: #0096c7;
+  --aside-fonts-color: #f1faee;
+  --border-color-blue: #0077b6;
+  --icon-alpha-color: rgba(255, 255, 255, 0.6);
+  --lightness: rgba(255, 255, 255, 0.35);
+  --dark-shadow: rgba(0,0,0,0.5);
+  --light-shadow: rgba(0, 0, 0, 0.03);
+  --light-shadow-s: rgba(0, 0, 0, 0.06);
+  --aside-line: solid 0.15rem;
+  --aside-line-s: solid 0.05rem;
+}
+
+.width-s, .width-m, .width-l {
+    width: fit-content;
+    overflow: hidden;    
+}
+
+.width-s {
+    max-width: 10rem;
+}
+
+.width-m {
+    max-width: 15rem;
+}
+
+.width-l {
+    max-width: 40rem;
+}
+
+main h1 {
+    font-size: 3rem;
+    padding: 3rem 5rem;
+    color: var(--dark-shadow);
+}
+
+#tabla-usuarios {
+    padding: 2rem 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 0.2rem black;
+    border-collapse: collapse;
+}
+
+#tabla-usuarios caption {
+    caption-side: bottom;
+    font-style: italic;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+#tabla-usuarios td, #tabla-usuarios th {
+    border: solid 0.1rem black;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+#tabla-usuarios th {
+    background-color: black;
+    color: var(--aside-fonts-color);
+    border-right: solid 0.1rem var(--aside-fonts-color);
+}

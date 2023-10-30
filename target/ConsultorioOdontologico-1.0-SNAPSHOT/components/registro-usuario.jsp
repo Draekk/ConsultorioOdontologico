@@ -6,16 +6,19 @@
             <input type="text" id="username" name="username" placeholder="Inserte su nombre de usuario">
         </label>
         <label for="password">
-            <input type="password" id="password" name="password" placeholder="Inserte su contraseña">
+            <input id="pass-input" type="password" id="password" name="password" placeholder="Inserte su contraseña">
         </label>
         <label for="rol">
             <select id="rol" name="rol">
-                <option value="" disabled selected>Selecciona tu rol</option>
+                <option value="" disabled selected>Selecciona un rol</option>
+                <option value="admin">Administrador</option>
                 <option value="paciente">Paciente</option>
                 <option value="secretario">Secretario</option>
                 <option value="odontologo">Odontólogo</option>
             </select>
         </label>
-        <input type="submit" id="btn-submit" value="Registrar">
+        <button type="submit" id="btn-submit">Registrar</button>
+        <i id="show-pass" class="fa-solid fa-eye"></i>
+        <i id="hide-pass" class="inactive fa-solid fa-eye-slash"></i>
     </form>
 </div>
