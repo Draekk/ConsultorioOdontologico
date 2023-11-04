@@ -44,19 +44,15 @@ public class SvUsuarios extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String rol = request.getParameter("rol");
-		String status = "0";
 		HttpSession miSession = request.getSession();
 
 		try {
 			control.crearUsuario(username, password, rol);
-			status = "1";
-			miSession.setAttribute("status", status);
+			miSession.setAttribute("message", "Usuario registrado con éxito");
 			response.sendRedirect("index.jsp");
 
 		} catch (Exception e) {
-			status = "0";
-			miSession.setAttribute("status", status);
-			miSession.setAttribute("error", e.getMessage());
+			miSession.setAttribute("message", e.getMessage());
 			response.sendRedirect("index.jsp");
 		}
 

@@ -31,18 +31,14 @@ public class SvEliminarUsuarios extends HttpServlet {
 			throws ServletException, IOException {
 		
 		int id = Integer.parseInt(request.getParameter("id"));
-		String status = "0";
 		HttpSession miSesion = request.getSession();
 		
 		try {
 			control.borrarUsuario(id);
-			status = "1";
-			miSesion.setAttribute("status", status);
+			miSesion.setAttribute("message", "Usuario eliminado");
 			response.sendRedirect("SvUsuarios");
 		} catch (Exception e){
-			status = "0";
-			miSesion.setAttribute("status", status);
-			miSesion.setAttribute("error", e.getMessage());
+			miSesion.setAttribute("message", e.getMessage());
 			response.sendRedirect("SvUsuarios");
 		}
 		

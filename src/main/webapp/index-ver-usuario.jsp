@@ -15,6 +15,7 @@
             <div class="container vert header-main">
                 <%@include file="./components/index-header.jsp" %>
                 <main>
+                    <%@include file="./components/mensaje-pop-up.jsp" %>
                     <%@include file="components/ver-usuarios.jsp" %>
                 </main>
                 <%@include file="./components/index-footer.jsp" %>
