@@ -26,13 +26,13 @@
                     <button title="Editar" type="submit">
                         <i class="fas fa-solid fa-pen-to-square"></i>
                     </button>
-                    <input type="hidden" name="id" value="${u.getId()}">
+                    <input type="hidden" name="id" value="<%=u.getId()%>">
                 </form>
                 <form action="SvEliminarUsuarios" method="POST">
                     <button title="Eliminar" type="submit">
                         <i class="fas fa-solid fa-trash"></i>
                     </button>
-                    <input type="hidden" name="id" value="${u.getId()}">
+                    <input type="hidden" name="id" value="<%=u.getId()%>">
                 </form>
             </td>
         </tr>

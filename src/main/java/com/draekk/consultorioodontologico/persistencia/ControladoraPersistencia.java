@@ -1,7 +1,10 @@
 package com.draekk.consultorioodontologico.persistencia;
 
 import com.draekk.consultorioodontologico.logica.*;
+import com.draekk.consultorioodontologico.persistencia.exceptions.NonexistentEntityException;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ControladoraPersistencia {
 
@@ -33,6 +36,16 @@ public class ControladoraPersistencia {
 	public List<Usuario> getUsuarios() {
 		List<Usuario> usuarios = usuarioJC.findUsuarioEntities();
 		return usuarios;
+	}
+
+	public void borrarUsuario(int id) {
+
+		try {
+			usuarioJC.destroy(id);
+		} catch (NonexistentEntityException ex) {
+			Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+		}
+		
 	}
 
 }

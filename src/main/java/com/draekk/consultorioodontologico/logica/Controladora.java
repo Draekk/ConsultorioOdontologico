@@ -2,7 +2,6 @@
 package com.draekk.consultorioodontologico.logica;
 
 import com.draekk.consultorioodontologico.persistencia.ControladoraPersistencia; 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Controladora {
@@ -20,6 +19,12 @@ public class Controladora {
 	
 	public List getUsuarios(){
 		return controladoraP.getUsuarios();
+	}
+
+	public void borrarUsuario(int id) {
+
+		controladoraP.borrarUsuario(id);
+		
 	}
 	
 }
