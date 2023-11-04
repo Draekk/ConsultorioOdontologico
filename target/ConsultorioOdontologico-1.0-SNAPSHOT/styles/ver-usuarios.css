@@ -28,6 +28,29 @@
     max-width: 40rem;
 }
 
+.accion {
+    width: inherit;
+    height: 100%;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.accion .fas {
+    font-size: 2rem;
+}
+
+.accion form:nth-child(1) .fas{
+    color: var(--aside-color);
+}
+
+.accion form:nth-child(2) .fas{
+    color: red;
+}
+
+.accion form button {
+    cursor: pointer;
+}
+
 main h1 {
     font-size: 3rem;
     padding: 3rem 5rem;

@@ -1,13 +1,14 @@
-
 package com.draekk.consultorioodontologico.servlets;
 
 import com.draekk.consultorioodontologico.logica.Controladora;
 import java.io.IOException;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -17,29 +18,48 @@ import javax.servlet.http.HttpServletResponse;
 public class SvUsuarios extends HttpServlet {
 
 	Controladora control = new Controladora();
-	
+
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 	}
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		processRequest(request, response);
+
+		List usuarios = control.getUsuarios();
+
+		HttpSession miSesion = request.getSession();
+		miSesion.setAttribute("usuarios", usuarios);
+
+		response.sendRedirect("index-ver-usuario.jsp");
+
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String rol = request.getParameter("rol");
-		
-		control.crearUsuario(username, password, rol);
-		
-		response.sendRedirect("index.jsp");
+		String status = "0";
+		HttpSession miSession = request.getSession();
+
+		try {
+			control.crearUsuario(username, password, rol);
+			status = "1";
+			miSession.setAttribute("status", status);
+			response.sendRedirect("index.jsp");
+
+		} catch (Exception e) {
+			status = "0";
+			miSession.setAttribute("status", status);
+			miSession.setAttribute("error", e.getMessage());
+			response.sendRedirect("index.jsp");
+		}
+
 	}
 
 	@Override

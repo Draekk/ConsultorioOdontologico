@@ -1,0 +1,45 @@
+:root {
+    --pop-up-bg: #ffb3c1;
+    --button-color: #d00000;
+    --lightness: rgba(255, 255, 255, 0.35);
+}
+
+.pop-up p {
+    color: black;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.pop-up {
+    border: solid 0.1rem var(--title-color);
+    border-radius: 2rem;
+    background-color: var(--pop-up-bg);
+    
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 35rem;
+    position: relative;
+}
+
+.pop-up button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 1.7rem;
+    height: 1.7rem;
+    
+    position: relative;
+    top: -1.5rem;
+    right: -1rem;
+}
+
+.pop-up button:hover {
+    background-color: var(--lightness);
+    border-radius: 0.5rem;
+}
+
+.pop-up .fas {
+    color: var(--button-color);
+}

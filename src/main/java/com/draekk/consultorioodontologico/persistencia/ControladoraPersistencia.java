@@ -1,10 +1,10 @@
-
 package com.draekk.consultorioodontologico.persistencia;
 
 import com.draekk.consultorioodontologico.logica.*;
+import java.util.*;
 
 public class ControladoraPersistencia {
-	
+
 	private HorarioJpaController horarioJC;
 	private OdontologoJpaController odontologoJC;
 	private PacienteJpaController pacienteJC;
@@ -15,7 +15,7 @@ public class ControladoraPersistencia {
 	private UsuarioJpaController usuarioJC;
 
 	public ControladoraPersistencia() {
-		
+
 		horarioJC = new HorarioJpaController();
 		odontologoJC = new OdontologoJpaController();
 		pacienteJC = new PacienteJpaController();
@@ -26,10 +26,13 @@ public class ControladoraPersistencia {
 		usuarioJC = new UsuarioJpaController();
 	}
 
-	
-
 	public void crear(Usuario usuario) {
 		usuarioJC.create(usuario);
 	}
-	
+
+	public List<Usuario> getUsuarios() {
+		List<Usuario> usuarios = usuarioJC.findUsuarioEntities();
+		return usuarios;
+	}
+
 }

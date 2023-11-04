@@ -2,6 +2,8 @@
 package com.draekk.consultorioodontologico.logica;
 
 import com.draekk.consultorioodontologico.persistencia.ControladoraPersistencia; 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Controladora {
 	
@@ -13,6 +15,11 @@ public class Controladora {
 		
 		controladoraP.crear(usuario);
 		
+	}
+	
+	
+	public List getUsuarios(){
+		return controladoraP.getUsuarios();
 	}
 	
 }

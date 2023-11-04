@@ -15,34 +15,7 @@
             <div class="container vert header-main">
                 <%@include file="./components/index-header.jsp" %>
                 <main>
-                    
-                    <h1>Ver usuarios</h1>
-                    
-                    <table id="tabla-usuarios">
-                        <caption>Lista de usuarios registrados</caption>
-                        <thead>
-                            <tr>
-                                <th class="width-s">ID</th>
-                                <th class="width-l">Nombre usuario</th>
-                                <th class="width-m">Rol</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="width-s" title="1">1</td>
-                                <td class="width-l" title="Drakkseid">Drakkseid</td>
-                                <td class="width-m" title="Administrador">Administrador</td>
-                            </tr>
-                            
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>ID</th>
-                                <th>Nombre usuario</th>
-                                <th>Rol</th>
-                            </tr>
-                        </tfoot>
-                    </table>
+                    <%@include file="components/ver-usuarios.jsp" %>
                 </main>
                 <%@include file="./components/index-footer.jsp" %>
             </div>
