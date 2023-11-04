@@ -22,7 +22,7 @@
             <td class="width-l" title="<%=u.getUsername()%>"><%=u.getUsername()%></td>
             <td class="width-m" title="<%=u.getRol()%>"><%=u.getRol()%></td>
             <td class="width-s container flex-center accion">
-                <form action="SvEditarUsuarios" method="POST">
+                <form action="SvEditarUsuario" method="GET">
                     <button title="Editar" type="submit">
                         <i class="fas fa-solid fa-pen-to-square"></i>
                     </button>

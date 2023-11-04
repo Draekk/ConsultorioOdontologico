@@ -18,6 +18,7 @@ com\draekk\consultorioodontologico\persistencia\TurnoJpaController.class
 com\draekk\consultorioodontologico\persistencia\SecretarioJpaController.class
 com\draekk\consultorioodontologico\persistencia\PacienteJpaController.class
 com\draekk\consultorioodontologico\logica\Turno_.class
+com\draekk\consultorioodontologico\servlets\SvEditarUsuario.class
 com\draekk\consultorioodontologico\persistencia\exceptions\IllegalOrphanException.class
 com\draekk\consultorioodontologico\logica\Secretario.class
 com\draekk\consultorioodontologico\persistencia\exceptions\PreexistingEntityException.class

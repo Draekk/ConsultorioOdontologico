@@ -26,5 +26,15 @@ public class Controladora {
 		controladoraP.borrarUsuario(id);
 		
 	}
+
+	public Usuario buscarUsuario(int id) {
+
+		return controladoraP.buscarUsuario(id);
+
+	}
+
+	public void editarUsuario(Usuario usuario) {
+		controladoraP.editarUsuario(usuario);
+	}
 	
 }

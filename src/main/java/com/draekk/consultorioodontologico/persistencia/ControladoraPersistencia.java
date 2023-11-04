@@ -48,4 +48,18 @@ public class ControladoraPersistencia {
 		
 	}
 
+	public Usuario buscarUsuario(int id) {
+
+		return usuarioJC.findUsuario(id);
+		
+	}
+
+	public void editarUsuario(Usuario usuario) {
+		try {
+			usuarioJC.edit(usuario);
+		} catch (Exception ex) {
+			Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+		}
+	}
+
 }
