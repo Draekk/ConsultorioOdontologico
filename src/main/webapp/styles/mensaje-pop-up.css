@@ -1,8 +1,3 @@
-:root {
-    --pop-up-bg: #ffb3c1;
-    --button-color: #d00000;
-    --lightness: rgba(255, 255, 255, 0.35);
-}
 
 .pop-up p {
     color: black;

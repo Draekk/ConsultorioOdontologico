@@ -5,8 +5,8 @@
         <label for="username">
             <input type="text" id="username" name="username" placeholder="Inserte su nombre de usuario">
         </label>
-        <label for="password">
-            <input id="pass-input" type="password" id="password" name="password" placeholder="Inserte su contraseña">
+        <label for="pass-input">
+            <input id="pass-input" type="password" name="password" placeholder="Inserte su contraseña">
         </label>
         <label for="rol">
             <select id="rol" name="rol">

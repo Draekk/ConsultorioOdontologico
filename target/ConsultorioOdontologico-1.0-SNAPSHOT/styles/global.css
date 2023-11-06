@@ -1,0 +1,85 @@
+:root {
+  --aside-color: #0096c7;
+  --aside-fonts-color: #f1faee;
+  --border-color-blue: #0077b6;
+  --icon-alpha-color: rgba(255, 255, 255, 0.6);
+  --lightness: rgba(255, 255, 255, 0.35);
+  --shadow: rgba(0,0,0,0.5);
+  --dark-shadow: rgba(0,0,0,0.7);
+  --light-shadow: rgba(0, 0, 0, 0.03);
+  --light-shadow-s: rgba(0, 0, 0, 0.06);
+  --aside-line: solid 0.15rem;
+  --aside-line-s: solid 0.05rem;
+  --pop-up-bg: #ffb3c1;
+  --button-color: #d00000;
+}
+
+/*General*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/*Display*/
+
+.inactive {
+  display: none!important;
+}
+
+.sg-bb {
+    border-bottom: var(--aside-line-s) var(--dark-shadow);
+    width: 80%;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+/*Flexbox*/
+
+.container {
+  display: flex;
+}
+
+.vert {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex-center-bt {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-container {
+  flex-flow: row wrap;
+}
+
+/*  Borders   */
+
+.bb-n-80 {
+    border-bottom: solid 0.1rem var(--shadow);
+    width: 80%;
+}

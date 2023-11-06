@@ -1,15 +1,4 @@
-:root {
-  --aside-color: #0096c7;
-  --aside-fonts-color: #f1faee;
-  --border-color-blue: #0077b6;
-  --icon-alpha-color: rgba(255, 255, 255, 0.6);
-  --lightness: rgba(255, 255, 255, 0.35);
-  --dark-shadow: rgba(0,0,0,0.5);
-  --light-shadow: rgba(0, 0, 0, 0.03);
-  --light-shadow-s: rgba(0, 0, 0, 0.06);
-  --aside-line: solid 0.15rem;
-  --aside-line-s: solid 0.05rem;
-}
+
 
 .width-s, .width-m, .width-l {
     width: fit-content;
@@ -30,25 +19,34 @@
 
 .accion {
     width: inherit;
-    height: 100%;
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding-left: 0.5rem!important;
+    padding-right: 0.5rem!important;
 }
 
 .accion .fas {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    margin-right: 0.2rem;
 }
 
-.accion form:nth-child(1) .fas{
-    color: var(--aside-color);
+.accion form:nth-child(1) button{
+    background-color: var(--aside-color);
+    justify-content: center;
 }
 
-.accion form:nth-child(2) .fas{
-    color: red;
+.accion form:nth-child(2) button{
+    background-color: red;
 }
 
 .accion form button {
     cursor: pointer;
+    width: 7rem;
+    height: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    margin: 0 0.2rem;
+    color: var(--aside-fonts-color);
+    font-size: 1.2rem;
 }
 
 main h1 {
@@ -61,7 +59,6 @@ main h1 {
     padding: 2rem 0;
     margin-right: auto;
     margin-left: auto;
-    border: solid 0.2rem black;
     border-collapse: collapse;
 }
 
@@ -73,13 +70,12 @@ main h1 {
 }
 
 #tabla-usuarios td, #tabla-usuarios th {
-    border: solid 0.1rem black;
+    border: solid 0.1rem var(--dark-shadow);
     padding: 1rem;
     font-size: 1.6rem;
 }
 
 #tabla-usuarios th {
-    background-color: black;
+    background-color: var(--aside-color);
     color: var(--aside-fonts-color);
-    border-right: solid 0.1rem var(--aside-fonts-color);
 }

@@ -1,74 +1,3 @@
-:root {
-  --aside-color: #0096c7;
-  --aside-fonts-color: #f1faee;
-  --border-color-blue: #0077b6;
-  --icon-alpha-color: rgba(255, 255, 255, 0.6);
-  --lightness: rgba(255, 255, 255, 0.35);
-  --dark-shadow: rgba(0,0,0,0.5);
-  --light-shadow: rgba(0, 0, 0, 0.03);
-  --light-shadow-s: rgba(0, 0, 0, 0.06);
-  --aside-line: solid 0.15rem;
-  --aside-line-s: solid 0.05rem;
-}
-
-/*General*/
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 2.3rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:visited {
-    color: var(--aside-fonts-color);
-}
-
-/*Display*/
-
-.inactive {
-  display: none!important;
-}
-
-.sg-bb {
-    border-bottom: var(--aside-line-s) var(--dark-shadow);
-    width: 80%;
-    margin: 0.5rem 0 1.5rem 0;
-}
-
-/*Flexbox*/
-
-.container {
-  display: flex;
-}
-
-.vert {
-  flex-direction: column;
-}
-
-.flex-center {
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.main-container {
-  flex-flow: row wrap;
-}
-
 /*Aside*/
 
 /*      header       */
@@ -181,11 +110,15 @@ aside h5 {
 
 .dropdown-menu a{
   font-size: 1.2rem;
-  color: black;
+  color: var(--dark-shadow);
   display: block;
   padding: 1rem 0.5rem;
   width: 100%;
   border-radius: 1rem;
+}
+
+.dropdown-menu a:visited {
+    color: var(--dark-shadow);
 }
 
 .dropdown-menu a:hover{
@@ -230,6 +163,11 @@ aside h5 {
 header {
   height: 7.3rem;
   box-shadow: 0.3rem 0 0.5rem var(--light-shadow);
+}
+
+header a {
+    color: black;
+    margin-right: 1rem;
 }
 
 /*      Nav Bar     */
