@@ -36,5 +36,18 @@ public class Controladora {
 	public void editarUsuario(Usuario usuario) {
 		controladoraP.editarUsuario(usuario);
 	}
+
+	public boolean comprobarIngreso(String username, String password) {
+
+		List<Usuario> usuarios = getUsuarios();
+		for(Usuario u : usuarios){
+			if(u.getUsername().equals(username)){
+				if(u.getPassword().equals(password)){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 	
 }

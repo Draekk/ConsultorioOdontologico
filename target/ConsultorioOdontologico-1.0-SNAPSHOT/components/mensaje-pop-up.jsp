@@ -2,8 +2,8 @@
 	if (mensaje != null) { %>
 <div class="pop-up container flex-center">
     <p><%=mensaje%></p>
-    <button id="pop-up-close">
-        <i class="fas fa-solid fa-x"></i>
+    <button id="pop-up-close" title="close">
+        <i class="fa-solid fa-x"></i>
     </button>
 </div>
 <%} %>

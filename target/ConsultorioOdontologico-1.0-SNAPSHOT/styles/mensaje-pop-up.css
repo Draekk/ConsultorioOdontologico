@@ -16,6 +16,7 @@
     margin-right: auto;
     width: fit-content;
     max-width: 35rem;
+    max-height: fit-content;
     position: fixed;
     right: 0;
 }
@@ -37,6 +38,6 @@
     border-radius: 0.5rem;
 }
 
-.pop-up .fas {
+.pop-up .fa-x {
     color: var(--button-color);
 }

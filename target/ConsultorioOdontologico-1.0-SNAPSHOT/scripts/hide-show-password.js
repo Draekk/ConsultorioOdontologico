@@ -10,13 +10,13 @@ function toogleInactiveClass(element) {
     }
 }
 
-showPass.addEventListener('click', () => {
+hidePass.addEventListener('click', () => {
     passInput.type = 'text';
     toogleInactiveClass(showPass);
     toogleInactiveClass(hidePass);
 });
 
-hidePass.addEventListener('click', () => {
+showPass.addEventListener('click', () => {
     passInput.type = 'password';
     toogleInactiveClass(hidePass);
     toogleInactiveClass(showPass);

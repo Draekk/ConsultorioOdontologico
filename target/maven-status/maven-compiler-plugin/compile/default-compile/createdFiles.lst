@@ -6,6 +6,7 @@ com\draekk\consultorioodontologico\logica\Paciente.class
 com\draekk\consultorioodontologico\logica\Usuario_.class
 com\draekk\consultorioodontologico\persistencia\OdontologoJpaController.class
 com\draekk\consultorioodontologico\servlets\SvEliminarUsuarios.class
+com\draekk\consultorioodontologico\servlets\SvLogin.class
 com\draekk\consultorioodontologico\logica\Responsable.class
 com\draekk\consultorioodontologico\logica\Odontologo.class
 com\draekk\consultorioodontologico\logica\Responsable_.class

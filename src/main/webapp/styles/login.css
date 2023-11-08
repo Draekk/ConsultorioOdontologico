@@ -22,13 +22,13 @@ p {
     margin: 0.5rem 0;
 }
 
-main {
+#main {
     width: 100vw;
     height: 100vh;
     background-color: var(--aside-color);
 }
 
-main > div {
+.main-container {
     height: 80%;
     background-color: var(--aside-fonts-color);
     border-radius: 1rem;
