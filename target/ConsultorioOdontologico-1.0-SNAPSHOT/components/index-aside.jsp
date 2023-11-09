@@ -24,7 +24,7 @@
 
                 <!-- Menu desplegable -->
                 <ul id="menu-odontologo" class="inactive dropdown-menu">
-                    <li class="container"><a href="index-reg-odon.jsp">Registrar Odontólogo</a></li>
+                    <li class="container"><a href="#">Registrar Odontólogo</a></li>
                     <li class="container"><a href="#">Ver Odontólogos</a></li>
                 </ul>
                 <!-- Fin Menu desplegable -->
@@ -41,7 +41,7 @@
 
                 <!-- Menu desplegable -->
                 <ul id="menu-paciente" class="inactive dropdown-menu">
-                    <li class="container"><a href="index-reg-pac.jsp">Registrar Paciente</a></li>
+                    <li class="container"><a href="#">Registrar Paciente</a></li>
                     <li class="container"><a href="#">Ver Pacientes</a></li>
                 </ul>
                 <!-- Fin Menu desplegable-->
