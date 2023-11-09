@@ -49,11 +49,11 @@ public class SvUsuarios extends HttpServlet {
 		try {
 			control.crearUsuario(username, password, rol);
 			miSession.setAttribute("message", "Usuario registrado con éxito");
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("login.jsp");
 
 		} catch (Exception e) {
 			miSession.setAttribute("message", e.getMessage());
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("login.jsp");
 		}
 
 	}

@@ -1,0 +1,58 @@
+
+.fa-eye, .fa-eye-slash {
+    position: relative;
+    top: -13.6rem;
+    left: 22.7rem;
+    font-size: 2rem;
+    color: var(--dark-shadow);
+    cursor: pointer;
+}
+
+main>div h1 {
+  font-size: 3rem;
+  padding: 3rem 5rem;
+  align-self: start;
+  color: var(--dark-shadow);
+}
+
+main>div form {
+    background: none;
+    width: 50rem;
+}
+
+form>div {
+    width: 100%;
+}
+
+form>div>label>input {
+    width: 100%;
+}
+
+form label {
+    width: 100%;
+    padding: 0 0.2rem;
+}
+
+input, select {
+  width: 100%;
+  height: 4rem;
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  padding: 0 4rem 0 1rem;
+  border: solid 0.1rem;
+  border-radius: 2rem;
+}
+
+#btn-submit {
+  width: 15rem;
+  cursor: pointer;
+  background-color: var(--border-color-blue);
+  color: var(--aside-fonts-color);
+  border: solid 0.1rem black;
+  height: 4rem;
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  padding: 0 1rem;
+  border: solid 0.1rem;
+  border-radius: 2rem;
+}

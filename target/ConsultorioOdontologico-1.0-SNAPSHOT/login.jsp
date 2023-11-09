@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./styles/login.css">
+        <link rel="stylesheet" href="./styles/login-registro.css">
         <link rel="stylesheet" href="./styles/global.css">
         <title>Consultorio Odontológico - Login page</title>
     </head>
@@ -30,7 +30,7 @@
                         </form>
                         <div class="container vert flex-center">
                             <a href="">¿Olvidaste la contraseña?</a>
-                            <p>¿No tienes cuenta? <a href="index-reg-usuario.jsp">¡Registrate!</a></p>
+                            <p>¿No tienes cuenta? <a href="registro.jsp">¡Registrate!</a></p>
                         </div>
                     </section>
                 </div>

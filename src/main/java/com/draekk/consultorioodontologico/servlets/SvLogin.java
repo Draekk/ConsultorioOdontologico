@@ -37,6 +37,7 @@ public class SvLogin extends HttpServlet {
 		
 		if(isValid) {
 			HttpSession miSesion = request.getSession(true);
+			miSesion.setMaxInactiveInterval(600);
 			miSesion.setAttribute("username", username);
 			miSesion.setAttribute("message", "¡Bienvenido " + username + "!");
 			response.sendRedirect("index.jsp");

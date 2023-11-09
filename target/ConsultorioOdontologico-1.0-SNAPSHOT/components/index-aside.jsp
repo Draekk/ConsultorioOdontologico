@@ -58,7 +58,7 @@
 
                 <!-- Menu desplegable -->
                 <ul id="menu-usuario" class="inactive dropdown-menu">
-                    <li class="container"><a href="index-reg-usuario.jsp">Registrar Usuario</a></li>
+                    <li class="container"><a href="#">Registrar Usuario</a></li>
                     <li class="container"><a href="SvUsuarios">Ver Usuarios</a></li>
                 </ul>
                 <!-- Fin Menu desplegable-->

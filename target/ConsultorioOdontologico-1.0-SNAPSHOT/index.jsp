@@ -10,6 +10,7 @@
         <title>Consultorio Odontológico</title>
     </head>
     <body>
+        <%@include file="./components/validar-sesion.jsp" %>
         <div class="container main-container">
             <%@include file="./components/index-aside.jsp" %>
             <div class="container vert header-main">
